@@ -14,6 +14,8 @@ foreach ($frutas as $indice => $fruta) {
 
 //array
 echo "<br>";
+echo "Lista de pilotos: <br>";
+echo "<br>";
 $matriz = [
     ["Max Verstappen", "Oscar Piatris", "Lando Norris"],
     ["Charles Leclerc", "Lewis Hamilton", "George Russel"],
