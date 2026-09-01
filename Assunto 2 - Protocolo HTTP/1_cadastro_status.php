@@ -7,7 +7,7 @@
 <body>
     <h1>Cadastro de alunos (com Status Codes)</h1>
 
-    <form method="post" action"">
+    <form method="post" action="">
         <label for="nome">Nome:</label>
         <input type="text" name="nome" required><br><br>
 
