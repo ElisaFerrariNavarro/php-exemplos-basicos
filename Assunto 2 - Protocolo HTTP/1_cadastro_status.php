@@ -20,7 +20,7 @@
     <br>
 
     <?php
-    // $_SERVER é uma varia´vel superglobal do PHP que contém várias informações sobre requisições feitas ao servidor. Neste caso verifica se o método utilizado foi POST e se verdade captura as informações (Nome e idade)
+    // $_SERVER é uma variável superglobal do PHP que contém várias informações sobre requisições feitas ao servidor. Neste caso verifica se o método utilizado foi POST e se verdade captura as informações (Nome e idade)
     if ($_SERVER('REQUEST_METHOD') == 'POST') {
 
     // Pega os valores digitados pelo aluno no formulário
