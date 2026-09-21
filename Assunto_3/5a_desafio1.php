@@ -34,7 +34,7 @@
 
     <form method="post" action="">
         <label for="senha">Ano de nascimento: </label>
-        <input type="number" name="idade" required>
+        <input type="number" name="ano" required>
 
 <!-- Botão de cadastro -->
         <button type="submit">Cadastrar</button>
@@ -46,24 +46,26 @@
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $nome = $_POST['nome'];
-        $idade = $_POST['idade'];
+        $ano = $_POST['ano'];
 
 
 //fopen significa "file open" e a letra a significa acrescentar
         $arquivo = fopen('log_acessos.txt', 'a');
 
-        $linha = $nome . ';' . $idade . "\n";
+        $linha = $nome . ';' . $ano . "\n";
 
         fwrite($arquivo, $linha);
 
         fclose($arquivo);
 
-if ($idade > 2007) {
-  echo "<p>Acesso negado, $nome!</p>";
+      $idade = 2026 - $ano;
+
+if ($ano > 2007) {
+  echo "<p>Acesso negado, $nome! sua idade é: $idade </p>";
 } else {
-    echo "<p>Acesso permitido, $nome!";
+    echo "<p>Acesso permitido, $nome! sua idade é: $idade";
 }
-   
+ 
 
 
     }
