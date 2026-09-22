@@ -45,8 +45,7 @@
         break;
         }
      }
-  }
-  
+
 fclose($arquivo);
 
 if($login_sucesso) {
@@ -54,8 +53,11 @@ if($login_sucesso) {
 
 
 }else {
-    echo "<p style='color: red;'>Usuário ou senha incorrets.</p>";
+    echo "<p style='color: red;'>Usuário ou senha incorreta.</p>";
 }
+  }
+  
+
 
 ?>
 </body>
