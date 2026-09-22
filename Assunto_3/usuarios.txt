@@ -1,10 +1,1 @@
-
-Elisa;Ferrari
-ouououou;123444
-Elisa;231213213
-Elisa;231213213
-Elisa;231213213
-Elisa;254351
-ouououou;22222222
-Elisa;112222
-Elisa;51515
+Elisa;1234
